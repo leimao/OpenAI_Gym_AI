@@ -40,3 +40,7 @@ To allow the trained AI to play the game, run the command "python OpenAI.py -m t
 ## Optimazation Notes
 
 <https://leimao.github.io/journal/OpenAI-Gym-CartPole.html>
+
+## AI Performance
+
+<https://gym.openai.com/evaluations/eval_ewr0DWHeTmGE6x1NGQ1LiQ>
