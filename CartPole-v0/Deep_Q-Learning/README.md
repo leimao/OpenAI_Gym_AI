@@ -9,9 +9,11 @@ Date: 4/28/2017
 [CartPole-v0](https://gym.openai.com/envs/CartPole-v0) is one of the learning environments in OpenAI Gym. Here I used Deep Q-Learning to learn how to play CartPole.
 
 Before Training:
+
 ![](presentation/episode_0.gif)
 
 After Training:
+
 ![](presentation/episode_27000.gif)
 
 ## Installation Dependence
