@@ -41,12 +41,12 @@ def Train_Model(env = env):
     while episode < EPISODE_MAX:
         # Keep training until episode >= EPISODE_max
         observation = env.reset()
+        AI_player.Current_State_Initialze(observation = observation)
         t = 0
         episode_reward = 0
         while True:  
             # Keep training until Luna Lander lands or crashes
             env.render() # Turn on visualization
-            AI_player.Current_State_Initialze(observation = observation)
             # print('time step: %d' % AI_player.time_step)
             action = AI_player.AI_Action()
             action_index = np.argmax(action) # binary to numeric
@@ -95,16 +95,17 @@ def Test_Model(env = env):
     while True:
         # Keep testing until hitting 'ctrl + c'
         observation = env.reset()
+        AI_player.Current_State_Initialze(observation = observation)
         t = 0
         episode_reward = 0
         while True:  
             # Keep training until Luna Lander lands or crashes
             env.render() # Turn on visualization
-            AI_player.Current_State_Initialze(observation = observation)
             # print('time step: %d' % AI_player.time_step)
             action = AI_player.AI_Action()
             action_index = np.argmax(action) # binary to numeric
             observation, reward, done, info = env.step(action_index)
+            AI_player.Current_State_Update(observation = observation)
             
             t += 1
             episode_reward += reward
