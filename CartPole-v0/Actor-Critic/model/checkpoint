@@ -1,0 +1,2 @@
+model_checkpoint_path: "AI_Critic"
+all_model_checkpoint_paths: "AI_Critic"
